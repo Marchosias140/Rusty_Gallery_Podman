@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM fedora:latest
 
-RUN apt update && apt upgrade -y
+RUN dnf -y update
 
 COPY wallpaper_gallery /usr/bin
 
